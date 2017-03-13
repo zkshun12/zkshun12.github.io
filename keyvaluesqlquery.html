@@ -8,7 +8,15 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <!-- generated_pages/new -->
-    <title>zkshun12博客</title>
+        <!-- generated_pages/new -->
+    <title>一种适用于Key-value方式数据多条件查询的SQL</title>
+	<meta name="keywords" content="Key-value,方式数据多条件查询的SQL">
+	<meta name="description" content="一种适用于Key-value方式数据多条件查询的SQL">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta property="og:type" content="novel">
+	<meta property="og:title" content="一种适用于Key-value方式数据多条件查询的SQL">
+	<meta property="og:description" content="一种适用于Key-value方式数据多条件查询的SQL">
   </head>
 
   <body>
@@ -19,33 +27,31 @@
         <h2>手摘日月星辰，脚踏三山五岳</h2>
 
         <section id="返回首页">
-          <a href="https://zkshun12.github.io" class="btn btn-github"><span class="icon"></span>返回首页</a>
+          <a href="https://zkshun12.github.io" class="btn btn-github"><span class="icon"></span>首页</a>
         </section>
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
-        
-<a id="welcome-to-github-pages" class="anchor" href="keyvaluesqlquery.html" aria-hidden="true">
- <h3> 
-   <span aria-hidden="true" class="octicon octicon-link"></span>一种适用于Key-value方式数据多条件查询的SQL
-  </h3>
-</a>
- <p>
+		<a id="welcome-to-github-pages" class="anchor" href="keyvaluesqlquery.html" aria-hidden="true">
+			<h3> 
+				<span aria-hidden="true" class="octicon octicon-link"></span>一种适用于Key-value方式数据多条件查询的SQL
+			</h3>
+		</a>
+	<p>
 	 select t.id,
 			 count(*) c
-	from t_attr_ext t
-	where (t.field = 'fieldname'
+	 from t_attr_ext t
+	 where (t.field = 'fieldname'
 	 and t.fieldvalue = 'fieldvalue')
-
 	or (
 	(t.field = 'fieldname1'
 	 and t.fieldvalue = 'fieldvalue1'
 	)
 	group by id
 	having c = 2
-</p> 
-</div>
+	</p> 
+   </div>
   </body>
 </html>
